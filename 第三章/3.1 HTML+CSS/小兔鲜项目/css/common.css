@@ -1,0 +1,124 @@
+body{
+    background-color: #f5f5f5;
+}
+.top{
+    background-color: #333333;
+    width: 1920px;
+    height: 52px;
+}
+
+
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.top .top-nav{
+    float: right;
+    line-height: 52px;
+}
+.top .top-nav a{
+    float: left;
+    margin-left: 20px;
+    color: #dcdcdc;
+}
+.top .top-nav .img{
+    display: inline-block;
+    /* position: absolute; */
+    width: 18px;
+    height: 18px;
+    /* margin-top: 20px; */
+    background-image: url(../images/sprites.png);
+    background-position: -158px -68px;
+}
+
+.top2{
+    background-color: white;
+    width: 1920px;
+    height: 132px;
+}
+.top2 .logo h1 a{
+    display: block;
+    background-image: url(../images/logo.png);
+    width: 207px;
+    height: 70px;
+    background-size: contain;
+    margin-top: 20px;
+}
+.top2 .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.top2 .wrapper{
+    display: flex;
+}
+.top2 .wrapper ul{
+    display: flex;
+    width: 720px;
+}
+.top2 .wrapper ul .img{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -69px;
+}
+.top2 .wrapper ul li{
+    line-height: 112px;
+    flex-grow: 1;
+}
+.search {
+    position: relative;
+    float: left;
+    margin-top: 38px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+.search input {
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+/* 购物车 */
+.car{
+    /* background-color: aquamarine; */
+    height: 23px;
+    width: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.car span{
+    position: relative;
+    display: block;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}

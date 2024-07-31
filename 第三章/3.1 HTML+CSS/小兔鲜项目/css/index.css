@@ -1,0 +1,232 @@
+.banner{
+    position: relative;
+    height: 500px;
+    background-image: url(../uploads/banner_1.png);
+}
+.banner .list{
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner .list ul li{
+    line-height: 50px;
+    color: white;
+    padding-left: 36px;
+}
+.banner .list ul li:hover{
+    background-color: #27ba9b;
+}
+.banner .list ul li span{
+    float: right;
+    margin-right: 19px;
+}
+
+/* 箭头 */
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    /* display: block; */
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+.arrow-left{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.arrow-right{
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+/* 新鲜好物 */
+.goods{
+    height: 520px;
+    padding-top: 48px;
+    background-color: white;
+}
+.goods .title{
+    height: 36px;
+}
+.goods h1{
+    float: left;
+    font-weight: 600;
+    font-size: 29px;
+}
+.goods .title p{
+    float: left;
+    margin-left: 34px;
+    margin-top: 16px;
+    color: #999999;
+}
+.goods .title a{
+    float: right;
+    /* margin-right: 34px; */
+    margin-top: 16px;
+    color: #999999;
+}
+.goods .goods-list{
+    /* display: flex; */
+    width: 1240px;
+    height: 500px;
+    overflow: hidden;
+}
+.goods .good{
+    float: left;
+    margin-top: 30px;
+    width: 300px;
+    margin: 0 5px;
+}
+.goods .good .div1{
+    width: 300px;
+    height: 305px;
+}
+.goods .good .div1 img{
+    width: 300px;
+    height: 305px;
+}
+.goods .good .div2{
+    width: 300px;
+    height: 100px;
+    background-color: #f0f9f4;
+}
+.goods .good .div2 span{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.goods .good .div2 span:nth-child(2){
+    color: #9a2e1f;
+}
+.arrow{
+    float: right;
+    margin-bottom: 30px;
+}
+
+.arrow .left,.right{
+    display: block;
+    width: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #999999;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+}
+.arrow .left:hover,.right:hover{
+    background-color: #27ba9b;
+}
+.goods .goods-list .good2{
+    width: 244px;
+    height: 306px;
+    margin: 0 2px;
+}
+.goods .goods-list .good2 img{
+    width: 240px;
+    height: 100%;
+}
+
+.zuixin{
+    margin-bottom: 50px;
+}
+.zuixin .title{
+    margin-top: 30px;
+}
+.zuixin .title p{
+    float: right;
+    color: #999999;
+}
+.zuixin .topic-list{
+    width: 1240px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.zuixin .topic-list .img{
+    width: 404px;
+    height: 288px;
+    background-size: 404px 288px;
+    background-image: url(../uploads/topic_goods_1.jpg);
+    position: relative;
+}
+.zuixin .topic-list .topic:nth-of-type(2) .img{
+    background-image: url(../uploads/topic_goods_2.jpg);
+}
+.zuixin .topic-list .topic:nth-of-type(3) .img{
+    background-image: url(../uploads/topic_goods_3.jpg);
+}
+.zuixin .topic .img .text{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.zuixin .topic .img .text p:nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+.zuixin .topic .img .text p:nth-child(2){
+    color: rgb(127, 127, 127);
+    font-size: 15px;
+}
+.zuixin .topic .img .price{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: rgb(179, 0, 0);
+    font-size: 20px;
+}
+/* 图片遮罩 */
+.zuixin .topic .img .img-mask{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* .zuixin .topic .img img{
+    width: 404px;
+    object-fit: contain;
+} */
+.zuixin .topic .msg{
+    width: 404px;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    line-height: 80px;
+}
+.zuixin .topic .msg .icon{
+    /* object-fit: cover; */
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -110px;
+}
+.zuixin .topic .msg .icon:nth-child(1){
+    background-position: -120px -110px;
+    margin-top: 32px;
+}
+.zuixin .topic .msg .icon:nth-child(3){
+    background-position: -160px -110px;
+    margin-top: 32px;
+    margin-left: 20px;
+}
+.zuixin .topic .msg .icon:nth-child(5){
+    background-position: -200px -110px;
+    margin-top: 32px;
+    text-align: right;
+    margin-left: 230px;
+}
+
+.btm{
+    margin-top: 110px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
