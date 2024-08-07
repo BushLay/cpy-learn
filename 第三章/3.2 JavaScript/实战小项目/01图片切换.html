@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imgs" src="./image/1.jpg" style="width: 300px; height: 200px;" alt="">
+    <br>
+    <button id="prev"><</button>
+    <button id="next">></button>
+    <script type="text/javascript">
+        var index = 2;
+        var next = document.getElementById("next");
+        var prev = document.getElementById("prev");
+        var img = document.getElementById("imgs");
+
+        next.onclick = function(){
+            index++;
+            
+            if(index > 5){
+                index = 1;
+            }
+            img.setAttribute("src", "./image/" + index + ".jpg");
+            console.log(index);
+        }
+        prev.onclick = function(){
+            index--;
+            if(index < 1){
+                index = 5;
+            }
+            img.setAttribute("src", "./image/" + index + ".jpg");
+            console.log(index);
+        }
+        
+    </script>
+</body>
+</html>
