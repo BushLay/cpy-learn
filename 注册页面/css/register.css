@@ -1,0 +1,86 @@
+h1,input,button{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-image: url("../background.jpg");
+    background-size: 1000px;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 400px;
+    width: 320px;
+    margin-left: 200px;
+    margin-top: 200px;
+    padding: 40px 40px;
+
+}
+.container .div1{
+    display: flex;
+    /* position: relative; */
+}
+.container .div1 h1{
+    font-weight: 530;
+}
+.container .div1 span{
+    display:flex;
+    align-items:flex-end;
+    margin-left: 10px;
+    color: rgb(168, 168, 168);
+}
+
+.div2{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+}
+
+.div2 span{
+    
+    margin-right: 20px;
+}
+.div2 span:nth-child(1){
+    /* display: inline-block; */
+    color: rgb(90, 90, 255);
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(95, 95, 255);
+    /* border-bottom-width:1px; */
+}
+
+.div3{
+    
+}
+.div3 input{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    border: 4px;
+    border-radius: 3px;
+    background-color: #f6f5fa;
+}
+.div3{
+    margin-bottom: 20px;
+}
+.div3 input:focus{
+    outline: 1px solid rgb(90, 183, 255);
+}
+
+.div4 label{
+    color: #aeaeae;
+}
+.div4 label:nth-child(3){
+    float:right
+}
+.div5{
+    margin-top: 20px;
+}
+.div5 button{
+    width: 100%;
+    height: 45px;
+    background-color: #5a7cff;
+    color: #f6f5fa;
+    font-size: 20px;
+    letter-spacing: 10px;
+    border-radius: 3px;
+}
