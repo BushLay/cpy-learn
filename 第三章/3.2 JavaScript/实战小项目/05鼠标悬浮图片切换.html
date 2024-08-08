@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            /* background-color: antiquewhite; */
+            background-image: url("./image/1.jpg");
+            background-size: cover;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            position: absolute;
+            bottom: 0;
+        }
+        li img{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li><img src="./image/1.jpg" alt=""></li>
+            <li><img src="./image/2.jpg" alt=""></li>
+            <li><img src="./image/3.jpg" alt=""></li>
+            <li><img src="./image/4.jpg" alt=""></li>
+            <li><img src="./image/5.jpg" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        var lis = document.getElementsByTagName('li');
+        var box = document.getElementById('box');
+        for(var i = 0; i < lis.length; i++){
+            lis[i].onmouseover = function(){
+                box.style.backgroundImage = "url(" + this.children[0].src + ")";
+            }
+        }
+    </script>
+</body>
+</html>

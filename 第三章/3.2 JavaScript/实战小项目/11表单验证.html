@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: inline;
+        }
+        input,span{
+            /* height: 30px; */
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>你的成绩：</h1>
+    <input type="text">
+    <span>请输入的成绩</span>
+    <script>
+        var ipt = document.getElementsByTagName('input')[0];
+        var sp = document.getElementsByTagName('span')[0];
+        ipt.blur = function(){
+            if(ipt.value > 100 || ipt.value < 0){
+                sp.innerHTML = "请输入正确的成绩";
+            }
+            
+        }
+    </script>
+</body>
+</html>

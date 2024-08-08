@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 400px;
+            margin: 200px auto;
+            background-color: rgb(202, 205, 255);
+        }
+        input{
+            height: 22px;
+            width: 22px;
+            font-size: 29px;
+        }
+        label{
+            font-size: 22px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>千千音乐盒</h1>
+        <hr>
+        <div class="musics">
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">薛丁格的猫</label>
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">不在他方</label>
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">相爱</label>
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">让浪漫做主</label>
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">One</label>
+            <label for="checkbox"><input class="myCheckbox" type="checkbox">Wake Me Up When September</label>
+
+
+            <label>
+                
+              
+              
+        </div>
+        <hr>
+        <button onclick="uncheck()">取消选中</button>
+        <button onclick="allcheck()">全选</button>
+        <button onclick="changeCheck()">反选</button>
+    </div>
+    <script>
+        function uncheck() {
+            for (var i = 0; i < document.getElementsByClassName('myCheckbox').length; i++) {
+              document.getElementsByClassName('myCheckbox')[i].checked = false;
+            }
+        }
+        function allcheck() {
+            for (var i = 0; i < document.getElementsByClassName('myCheckbox').length; i++) {
+              document.getElementsByClassName('myCheckbox')[i].checked = true;
+            }
+        }
+        function changeCheck(){
+            for (var i = 0; i < document.getElementsByClassName('myCheckbox').length; i++) {
+                document.getElementsByClassName('myCheckbox')[i].checked = !document.getElementsByClassName('myCheckbox')[i].checked;
+            }
+        }
+    </script>
+</body>
+</html>
