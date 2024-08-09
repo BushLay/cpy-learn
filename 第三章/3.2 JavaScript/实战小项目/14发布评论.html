@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ctn{
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: rgb(255, 239, 239);
+        }
+        .ctn .pub textarea{
+            height: 200px;
+            width: 400px;
+        }
+        .ctn .comments li{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="ctn">
+        <div class="pub">
+            <textarea name="" id="cmt" placeholder="请输入评论："></textarea>
+            <!-- <input id="cmt" type="textarea" placeholder="请输入评论："> -->
+            <button id="btn_pub" onclick="publish()">发表</button>
+        </div>
+        <hr>
+        <ul class="comments">
+        </ul>
+    </div>
+    <script>
+        var cmt = document.getElementById('cmt');
+        var btn_pub = document.getElementById('btn_pub');
+        function publish(){
+            var comment = cmt.value;
+            if(comment == ''){
+                alert('请输入评论');
+            }else{
+                var ul = document.getElementsByClassName('comments')[0];
+                var li = document.createElement('li');
+                li.innerHTML = '<span>'+comment+'</span><button class="btn_del">删除</button>';
+                ul.appendChild(li);
+                cmt.value = '';
+
+
+                var btn_del = li.querySelector('.btn_del');
+                btn_del.onclick = function(){
+                    this.parentNode.remove();
+                }
+            }
+        }
+
+        
+
+
+        // function del(){
+        //     for(var i=0; i<btn_del.length; i++){
+        //         console.log('点击了删除按钮');
+        //         btn_del[i].onclick = function(){
+        //             this.parentNode.remove();
+        //         }
+        //     }
+        // }
+        
+    </script>
+</body>
+</html>

@@ -21,9 +21,12 @@
     <script>
         var ipt = document.getElementsByTagName('input')[0];
         var sp = document.getElementsByTagName('span')[0];
-        ipt.blur = function(){
-            if(ipt.value > 100 || ipt.value < 0){
-                sp.innerHTML = "请输入正确的成绩";
+        ipt.onblur = function(){
+            if(ipt.value <= 100 && ipt.value >= 0){
+                sp.innerHTML = "✅输入成绩正确";
+            }
+            else{
+                sp.innerHTML = "❌输入成绩错误";
             }
             
         }

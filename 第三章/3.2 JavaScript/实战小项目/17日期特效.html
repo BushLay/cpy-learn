@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nowDate{
+            width: 500px;
+            height: 50px;
+            background-color: rgb(253, 255, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="nowDate"></div>
+    <script>
+        var nowDate = document.querySelector('.nowDate');
+        // var now = new Date();
+        var temp = '';
+
+        // var year;
+        // var month;
+        // var day;
+        // var hour;
+        // var minute;
+        // var second;
+        // var week;
+
+
+        setInterval(time, 1000);
+        function time(){
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth();
+            var day = now.getDate();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            var week = now.getDay();
+            var temp = year+'年'+month+'月'+day+'日'+' '+hour+':'+minute+':'+second+' '+'星期'+week;
+            // console.log(second)
+            // console.log(temp);
+            nowDate.innerHTML = temp;
+        }
+        
+    </script>
+</body>
+</html>
