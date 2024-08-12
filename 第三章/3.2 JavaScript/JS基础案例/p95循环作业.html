@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1.求1~100之间所有数的总和和平均值
+    // var sum = 0;
+    // for(var i = 1;i<=100;i++){
+    //     sum = sum + i;
+    // }
+    // alert('和为：'+sum+'平均值为：'+sum/100);
+
+
+    // 2.求1~100之间所有偶数的和
+    // var sum = 0;
+    // for(var i = 1;i<=100;i++){
+    //     if(i%2 == 0){
+    //         sum = sum + i;
+    //     }
+    // }
+    // alert('和为：'+sum);
+
+    // 3.求100以内7的倍数的总和
+    // var sum = 0;
+    // for(var i = 1;i<=100;i++){
+    //     if(i%7 == 0){
+    //         sum = sum + i;
+    //     }
+    // }
+    // alert('和为：'+sum);
+
+
+    // 4.使用for循环打印矩形,要求每次只能输出一个*
+    // for(var i = 1;i<=5;i++){
+    //     for(var j = 1;j<=5;j++){
+    //         document.write('*');
+    //     }
+    //     document.write('<br>');
+    // }
+        
+    // 5.使用for循环打印三角形
+    // for(var i = 1;i<=5;i++){
+    //     for(var j = 1;j<=i;j++){
+    //         document.write('*');
+    //     }
+    //     document.write('<br>');
+    // }
+
+
+    // 6.使用for循环打印99乘法表
+    // for(var i = 1;i<=9;i++){
+    //     for(var j = 1;j<=i;j++){
+    //         document.write(j+'*'+i+'='+i*j+'&nbsp;&nbsp;');
+    //     }
+    //     document.write('<br>');
+    // }
+
+
+
+    // 7.接收用户输入的用户名和密码,若用户名为'admin',密码为'123456',则提示用户登陆成功!否则,让用户一直输入.
+    // do{
+    //     var username = prompt('请输入用户名');
+    //     var password = prompt('请输入密码');
+    //     if(username == 'admin' && password == '123456'){
+    //         alert('登陆成功!');
+    //         break;
+    //     }else{
+    //         alert('用户名或密码错误!');
+    //     }
+    // }while(true);
+
+
+    // 8.求整数1~100的累加值，但要求跳过所有个位为3的数
+    var sum = 0;
+    for(var i = 1;i<=100;i++){
+        if(i%10 == 3){
+            console.log(i);
+            
+            continue;
+        }
+        sum = sum + i;
+    }
+    alert('和为：'+sum);
+
+    </script>
+</body>
+</html>
