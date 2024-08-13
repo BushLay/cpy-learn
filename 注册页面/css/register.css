@@ -39,7 +39,7 @@ body{
     
     margin-right: 20px;
 }
-.div2 span:nth-child(1){
+.bigblue{
     /* display: inline-block; */
     color: rgb(90, 90, 255);
     font-size: 20px;
@@ -48,9 +48,7 @@ body{
     /* border-bottom-width:1px; */
 }
 
-.div3{
-    
-}
+
 .div3 input{
     margin-top: 20px;
     font-size: 18px;
@@ -72,8 +70,21 @@ body{
 .div4 label:nth-child(3){
     float:right
 }
+#cpc{
+    background-color: #d4c4ff;
+    margin-top: 20px;
+    float: right;
+    height: 40px;
+    width: 90px;
+    
+    font-size: 30px;
+    color: #aeaeae;
+}
 .div5{
     margin-top: 20px;
+}
+.div55{
+    margin-top: 61px;
 }
 .div5 button{
     width: 100%;

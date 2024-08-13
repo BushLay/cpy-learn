@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/register.css">
+    <!-- <link rel="stylesheet" href="js/register.js"> -->
+    <script src="js/register.js"></script>
     <title>注册页</title>
 </head>
+
 <body>
     <div class="container">
         <div class="div1">
@@ -13,22 +17,47 @@
             <span>广告业务后台系统</span>
         </div>
         <div class="div2">
-            <span>密码登录</span>
-            <span>短信登录</span>
+            <span class="bigblue" id="psdLogin" onclick="psdLogin()">密码登录</span>
+            <span id="smsLogin" onclick="smsLogin()">短信登录</span>
         </div>
-        <div class="div3">
-            <input type="text" id="name" name="name" required minlength="8" maxlength="15" size="31" placeholder="请输入用户名"/>
-            <input type="text" id="psd" name="psd" required minlength="8" maxlength="15" size="31" placeholder="请输入密码"/>
+        <div class="content1">
+            <div class="div3">
+                <input type="text" id="name" name="name" required minlength="8" maxlength="15" size="31"
+                    placeholder="请输入用户名" />
+                <input type="password" id="psd" name="psd" required minlength="8" maxlength="15" size="31"
+                    placeholder="请输入密码" />
+            </div>
+            <div class="div4">
+
+                <!-- <input type="checkbox" id="check">  -->
+                <!-- <label for="check" class="sms">短信登录</label> -->
+
+
+                <label onclick="forget()" for="">忘记密码</label>
+            </div>
+            <div class="div5">
+                <button onclick="check1()">登录</button>
+            </div>
         </div>
-        <div class="div4">
-            <input type="checkbox" id="check">
-            <label for="check" class="sms">短信登录</label>
-            <label for="">忘记密码</label>
-            
+        <div class="content2" style="display: none;">
+            <div class="div3">
+                <input type="text" id="phone" name="name" required minlength="8" maxlength="15" size="31"
+                    placeholder="请输入手机号码" />
+                <input type="text" id="smscode" name="psd" required minlength="4" maxlength="4" size="20"
+                    placeholder="请输入验证码" />
+                <div id="cpc" onclick="changeCaptcha()">
+
+                </div>
+            </div>
+            <div class="div5 div55">
+                <button onclick="check2()">登录</button>
+            </div>
         </div>
-        <div class="div5">
-            <button>登录</button>
-        </div>
+
     </div>
+    <script>
+
+    </script>
 </body>
+
 </html>
