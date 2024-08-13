@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="couter">
+        Counter: {{ counter }}
+    </div>
+    <script>
+        const Counter = {
+            data() {
+                return {
+                    counter: 5
+                }
+            }
+        }
+        Vue.createApp(Counter).mount('.couter')
+    </script>
+</body>
+</html>
