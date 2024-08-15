@@ -1,19 +1,32 @@
 <template>
     <div>
-        Page1
+        <!-- {{counter.count}}<br/> -->
+        {{counter.testCount}}<br/>
+        <!-- {{message}}<br/>
+        {{book}}<br/> -->
+        {{testCount}}
+
+        <button @click="testClick">clickMe</button>
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
+import { defineStore, storeToRefs } from 'pinia'
+import { testStore } from '../stores/TestStore'
 
-        return {}
-    }
+const counter = testStore()
+
+let {message,book,testCount} = storeToRefs(counter);
+
+function testClick(){
+    counter.testAction();
+    // message.value = "张三";
+    // book.value.price = 15
+    // counter.book.price = 15
+    testCount.value = "翠花"
 }
+
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
 </style>

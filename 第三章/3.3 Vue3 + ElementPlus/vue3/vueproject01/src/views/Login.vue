@@ -1,19 +1,25 @@
 <template>
     <div>
-        Login
+        Login 
+        {{info.id}} , {{info.name}}
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
+import {ref , reactive } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 
-        return {}
-    }
-}
+const router = useRouter()
+const route = useRoute()//获取上层路由传递的参数
+
+let info = reactive({
+    id:route.query.id,
+    name:route.query.name,
+})
+
+
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

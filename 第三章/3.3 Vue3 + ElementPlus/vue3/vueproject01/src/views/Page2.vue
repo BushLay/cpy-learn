@@ -1,19 +1,12 @@
 <template>
     <div>
-        Page2
+        PAGE2
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
 
-        return {}
-    }
-}
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
 </style>
