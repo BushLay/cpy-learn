@@ -1,0 +1,62 @@
+h1,
+input,
+button {
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 400px;
+  width: 320px;
+  padding: 40px 40px;
+  position: relative;
+  left: -400px;
+}
+
+.div1 {
+  display: flex;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  span {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+    color: rgb(168, 168, 168);
+  }
+}
+
+.el-menu-demo {
+  width: 190px;
+  margin-top: 20px;
+}
+.inputbox{
+  margin-top: 10px;
+}
+.div22{
+  position: relative;;
+}
+#cpc {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: #409EFF;
+  color: #69ff9d;
+  font-size: 30px;
+  float: right; 
+  left: 240px;
+  top: 60px;
+}
+.forget {
+  float: right;
+  margin-top: 15px;
+  color: #949494;
+  display: block;
+}
+.login-btn {
+  width: 100%;
+  margin-top: 20px;
+}
