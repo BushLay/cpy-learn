@@ -1,0 +1,24 @@
+# 应用服务 WEB 访问端口
+server.port: 8080
+
+# 人物信息
+name: zhangsan
+age: 18
+address:
+  city: beijing
+  street: huangpu
+#数组
+address2:
+  - fuzhou
+  - nanchang
+#纯量
+msg1: "hello \n sdf"
+msg2: 'hello \n sdf2'
+
+
+person:
+  name: lisi
+  age: 19
+  address:
+    - fuzhou
+    - nanchang

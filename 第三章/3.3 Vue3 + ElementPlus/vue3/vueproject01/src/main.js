@@ -9,7 +9,7 @@ let routes = [
     { path: '/login', component: () => import('./views/Login.vue') },
     { path: '/test', component: () => import('./views/Test.vue') },
     { path: '/product_list', component: () => import('./views/ProductList.vue') },
-    { path: '/product_list2', component: () => import('./views/ProductList2.vue') },
+    // { path: '/product_list2', component: () => import('./views/ProductList2.vue') },
     {
         path: '/main', component: () => import('./views/Main.vue'), children: [
             { path: '/main/page1', component: () => import('./views/Page1.vue') },

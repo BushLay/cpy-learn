@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- {{counter.count}}<br/> -->
-        {{counter.testCount}}<br/>
+        <!-- {{counter.testCount}}<br/> -->
         <!-- {{message}}<br/>
         {{book}}<br/> -->
         {{testCount}}
