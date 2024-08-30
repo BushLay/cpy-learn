@@ -42,7 +42,15 @@ const router = createRouter({
        meta: {
        title: '用户表'
        }
-     }
+     },
+     {
+        path: '/planstable',
+        name: 'planstable',
+        component: () => import('../components/PlansTable.vue'),
+        meta: {
+        title: '计划表'
+        }
+      }
    
   ]
 })

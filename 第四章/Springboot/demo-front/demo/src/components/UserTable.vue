@@ -71,7 +71,10 @@
         try {
           const response = await axios.post('http://localhost:8080/api/users', this.newUser);
           this.users.push(response.data); // 将新用户添加到 users 列表中
+          location.reload();// 刷新页面
           this.newUser = { name: '', age: null }; // 重置新用户数据
+          // console.log('users列表:'+ this.users);
+          
         } catch (err) {
           this.error = '添加用户失败。';
         }
