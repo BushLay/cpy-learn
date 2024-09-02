@@ -14,9 +14,12 @@
             </thead>
             <tbody>
                 <tr v-for="item in plans" :key="item.id">
-                    <td>{{item.date}}</td>
-                    <td>{{item.num}}</td>
+                    <!-- <td>{{item.date}}</td>
+                    <td>{{item.num}}</td> -->
+                    <td><input v-model="item.date"></td>
+                    <td><input v-model="item.num"></td> 
                     <td>
+                        <button @click="updatePlans(item)">保存</button>
                         <button @click="delPlans(item.date)">删除</button>
                     </td>
                 </tr>
@@ -67,6 +70,14 @@ export default {
                 this.error = '删除计划失败。';
             }
             location.reload();
+        },
+        async updatePlans(plan) {
+            try {
+                await axios.put(`http://localhost:8080/api/plans/${plan.date}`,plan);
+                alert('计划信息已更新');
+            } catch (err) {
+                this.error = '更新计划信息失败。';
+            }
         }
     },
     mounted() {

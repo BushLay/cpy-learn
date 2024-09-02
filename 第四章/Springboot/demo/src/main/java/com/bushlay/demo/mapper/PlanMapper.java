@@ -1,10 +1,7 @@
 package com.bushlay.demo.mapper;
 
 import com.bushlay.demo.entity.Plan;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -18,4 +15,7 @@ public interface PlanMapper {
 
     @Delete("DELETE FROM word_plan WHERE date = #{id}")
     void deletePlan(String id);
+
+    @Update("UPDATE word_plan SET num = #{num} WHERE date = #{date}")
+    int updatePlan(Plan plan);
 }

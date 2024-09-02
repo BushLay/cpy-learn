@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bushlay.demo.mapper.TableMapper">
+    <!--    建表-->
+    <update id="createTable" parameterType="string">
+        CREATE TABLE `${name}`
+        (
+            id INT(5) NULL COMMENT 'user_id',
+            name VARCHAR(10) NULL COMMENT 'user_name',
+            depId VARCHAR(10) NULL COMMENT 'user_department',
+            salary DOUBLE(7,1) NULL COMMENT 'user_salary'
+        )
+    </update>
+</mapper>

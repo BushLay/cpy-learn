@@ -26,5 +26,9 @@ public class PlanController {
     public void deletePlan(@PathVariable String id) {
         planService.deletePlan(id);
     }
+    @PutMapping("/{id}")
+    public void updatePlan(@PathVariable String id, @RequestBody Plan plan) {
+        planService.updatePlan(plan);
+    }
 
 }

@@ -24,4 +24,9 @@ public class PlanService {
     public void deletePlan(String id) {
         planMapper.deletePlan(id);
     }
+
+    public void updatePlan(Plan plan) {
+        planMapper.updatePlan(plan);
+    }
+
 }
